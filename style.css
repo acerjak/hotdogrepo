@@ -28,14 +28,55 @@
 .column {
     border-radius: 25px;
     border: 2px solid rgb(61, 126, 67);
-    width: 300px;
-    height: 750px;
-    float: left;
-    margin: 20px;
+    height: 500px;
+    margin: 2.5px;
 }
-
 .column:after {
     content: "";
     display: table;
     clear: both;
 }
+.main {
+    width: 75%;
+    float: right;
+}
+.menu {
+    width: 20%;
+    float: left;
+}
+.apiHotdog {
+    border-radius: 15%;
+    margin: 0 auto;
+    width: 98%;
+    height: 50%;
+    border: 1.5px solid black;
+    display: block;
+    text-align: center;
+}
+.apiInput {
+    display: inline-block;
+    text-align: left;
+    margin-left: auto;
+    margin-top: 50px;
+    margin-right: auto;
+    width: 80%;
+    height: 25px;
+}
+.hotdogBtn {
+    width: 15%;
+    height: 15px;
+}
+.infoAPI {
+    border-radius: 15%;
+    margin: 0 auto;
+    width: 98%;
+    height: 50%;
+    border: 1.5px solid black;
+}
+.content {
+    max-width: 500px;
+    margin: auto;
+  }
+  * {
+    box-sizing: border-box;
+  }
