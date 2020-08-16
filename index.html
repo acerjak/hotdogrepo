@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <title>Hotdog</title>
 </head>
 <body>
@@ -12,14 +13,19 @@
     </nav>
     <div class="container">
         <div class="hotdog">
-            <div class="column">
+            <div class="column menu col-3">
                 <div></div>
                 <div></div>
             </div>
             </div>
-            <div class="column">
-                <div></div>
-                <div></div>
+            <div class="column main col-9">
+                <form class="apiHotdog">
+                        <label name="apiInput" class="apiInput">
+                            <input name="apiInput" class="apiInput" type="text" id="apiInput">
+                        </label>
+                        <button name="" class="hotdogBtn"><span class="iconify" data-icon="entypo-magnifying-glass" data-inline="false"></span></button>
+                </form>
+                <div class="infoAPI"></div>
             </div>
         </div>
     </div>
