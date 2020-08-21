@@ -78,7 +78,16 @@
 .content {
     max-width: 500px;
     margin: auto;
-  }
-  * {
+}
+* {
     box-sizing: border-box;
-  }
+}
+.recipeCard {
+    border-radius: 25%;
+    border: 1px solid red;
+}
+.recipeImg {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
