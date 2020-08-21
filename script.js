@@ -33,10 +33,11 @@ let createRecipe = (recipe) => {
                 recipeElem.style = 'width: 18rem;'
                 //insert this into new element
                 recipeElem.innerHTML = `
-                <div>
+                <div class="recipeCard">
                 <h3>${recipe.results[0].title}</h3>
                 <img 
                     src="${recipe.results[0].image}" 
+                    class="recipeImg"
                     alt="recipe">
                 </div>
                     `
