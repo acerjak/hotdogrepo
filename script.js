@@ -40,6 +40,13 @@ let createRecipe = (recipe) => {
                     class="recipeImg"
                     alt="recipe">
                 </div>
+                <div class="recipeCard">
+                <h3>${recipe.results[1].title}</h3>
+                <img 
+                    src="${recipe.results[1].image}" 
+                    class="recipeImg"
+                    alt="recipe">
+                </div>
                     `
                 // <img 
                 //     src="${recipe.results[1].image}" 
@@ -81,4 +88,5 @@ let createRecipe = (recipe) => {
                 //log this new element to ensure correctly dynamically made 
                 console.log(recipeElem) 
                 document.getElementById('recipeDiv').append(recipeElem)
+                document.getElementById('apiInput').value = ''
 }
