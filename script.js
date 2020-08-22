@@ -33,10 +33,18 @@ let createRecipe = (recipe) => {
                 recipeElem.style = 'width: 18rem;'
                 //insert this into new element
                 recipeElem.innerHTML = `
-                <div>
+                <div class="recipeCard">
                 <h3>${recipe.results[0].title}</h3>
                 <img 
                     src="${recipe.results[0].image}" 
+                    class="recipeImg"
+                    alt="recipe">
+                </div>
+                <div class="recipeCard">
+                <h3>${recipe.results[1].title}</h3>
+                <img 
+                    src="${recipe.results[1].image}" 
+                    class="recipeImg"
                     alt="recipe">
                 </div>
                     `
@@ -80,4 +88,5 @@ let createRecipe = (recipe) => {
                 //log this new element to ensure correctly dynamically made 
                 console.log(recipeElem) 
                 document.getElementById('recipeDiv').append(recipeElem)
+                document.getElementById('apiInput').value = ''
 }
