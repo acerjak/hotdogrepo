@@ -27,9 +27,6 @@
     font-family: monospace;
 }
 .column {
-    border-radius: 25px;
-    background-color: rgb(243, 240, 240);
-    box-shadow: 10px 10px 10px grey;
     height: 500px;
     margin-top: 20px;
 }
@@ -44,16 +41,21 @@
 }
 .menu {
     width: 20%;
+    border-radius: 25px;
+    background-color: rgb(243, 240, 240);
+    box-shadow: 10px 10px 10px grey;
     float: left;
 }
 .apiHotdog {
-    border-radius: 15%;
+    border-radius: 25px;
+    background-color: rgb(243, 240, 240);
+    box-shadow: 10px 10px 10px grey;
     margin: 0 auto;
     width: 75%;
-    height: 50%;
-    border: 3px dashed black;
+    height: 25%;
     display: block;
     text-align: center;
+    margin-bottom: 20px;
 }
 .apiInput {
     display: inline-block;
@@ -69,25 +71,32 @@
     height: 20px;
 }
 .recipeDiv {
-    border-radius: 15%;
     margin: 0 auto;
+    overflow: scroll;
+    border-radius: 25px;
+    background-color: rgb(243, 240, 240);
+    box-shadow: 10px 10px 10px grey;
     width: 98%;
-    height: 50%;
-    border: 1.5px solid black;
-}
-.content {
-    max-width: 500px;
-    margin: auto;
+    height: 70%;
 }
 * {
     box-sizing: border-box;
 }
+.card{
+    margin: auto;
+    display: block;
+}
 .recipeCard {
     border-radius: 25%;
     border: 1px solid red;
+    box-shadow: 10px 10px 10px grey;
+    text-align: center;
+    width: 45%;
+    height: 45%;
+    display: inline-block;
 }
 .recipeImg {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     margin: 0 auto;
 }
