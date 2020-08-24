@@ -71,32 +71,36 @@
     height: 20px;
 }
 .recipeDiv {
-    margin: 0 auto;
+    margin: auto;
     overflow: scroll;
     border-radius: 25px;
     background-color: rgb(243, 240, 240);
     box-shadow: 10px 10px 10px grey;
-    width: 98%;
+    width: 75%;
     height: 70%;
 }
 * {
     box-sizing: border-box;
 }
 .card{
-    margin: auto;
+    margin: 0;
     display: block;
 }
 .recipeCard {
     border-radius: 25%;
+    margin: auto;
     border: 1px solid red;
     box-shadow: 10px 10px 10px grey;
     text-align: center;
-    width: 45%;
-    height: 45%;
+    width: 600px;
+    height: 550px;
     display: inline-block;
 }
 .recipeImg {
     width: 200px;
     height: 200px;
     margin: 0 auto;
+}
+.recipeSummary {
+    overflow-wrap: normal;
 }
