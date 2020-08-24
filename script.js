@@ -35,17 +35,27 @@ let createRecipe = (recipe) => {
                 recipeElem.innerHTML = `
                 <div class="recipeCard">
                 <h3>${recipe.results[0].title}</h3>
+                <h4>${recipe.results[0].analyzedInstructions[0].steps[0].step}
+                ${recipe.results[0].analyzedInstructions[0].steps[1].step}
+                ${recipe.results[0].analyzedInstructions[0].steps[2].step}
+                </h4>
                 <img 
                     src="${recipe.results[0].image}" 
                     class="recipeImg"
                     alt="recipe">
+                <p class="recipeSummary">${recipe.results[0].summary}</p>
                 </div>
                 <div class="recipeCard">
                 <h3>${recipe.results[1].title}</h3>
+                <h4>${recipe.results[1].analyzedInstructions[0].steps[0].step}
+                ${recipe.results[1].analyzedInstructions[0].steps[1].step}
+                ${recipe.results[1].analyzedInstructions[0].steps[2].step}
+                </h4>
                 <img 
                     src="${recipe.results[1].image}" 
                     class="recipeImg"
                     alt="recipe">
+                <p class="recipeSummary">${recipe.results[1].summary}</p>
                 </div>
                     `
                 // <img 
