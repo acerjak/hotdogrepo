@@ -74,6 +74,7 @@
     margin: auto;
     overflow: auto;
     border-radius: 25px;
+    background-image: url("./img/plaid.jpg");
     background-color: rgb(243, 240, 240);
     box-shadow: 10px 10px 10px grey;
     width: 75%;
@@ -88,10 +89,11 @@
 }
 .recipeCard {
     margin-left: 50%;
-    margin-top: 10px;
+    margin-top: 19px;
     overflow: auto;
     margin-right: 50%;
-    border: 3px solid red;
+    border: 3px solid rgb(160, 159, 159);
+    background-image: url("./img/linen.jpg");
     box-shadow: 15px 15px 15px grey;
     text-align: center;
     width: 500px;
