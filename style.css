@@ -72,7 +72,7 @@
 }
 .recipeDiv {
     margin: auto;
-    overflow: scroll;
+    overflow: auto;
     border-radius: 25px;
     background-color: rgb(243, 240, 240);
     box-shadow: 10px 10px 10px grey;
@@ -83,16 +83,18 @@
     box-sizing: border-box;
 }
 .card{
-    margin: 0;
+    width: 70%;
     display: block;
 }
 .recipeCard {
-    border-radius: 25%;
-    margin: auto;
-    border: 1px solid red;
-    box-shadow: 10px 10px 10px grey;
+    margin-left: 50%;
+    margin-top: 10px;
+    overflow: auto;
+    margin-right: 50%;
+    border: 3px solid red;
+    box-shadow: 15px 15px 15px grey;
     text-align: center;
-    width: 600px;
+    width: 500px;
     height: 550px;
     display: inline-block;
 }
@@ -102,5 +104,4 @@
     margin: 0 auto;
 }
 .recipeSummary {
-    overflow-wrap: normal;
 }
