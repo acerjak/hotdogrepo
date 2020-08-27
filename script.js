@@ -51,18 +51,8 @@ let createRecipe = (recipe) => {
                 <br>${recipe.hits[0].recipe.ingredientLines[7] ? recipe.hits[0].recipe.ingredientLines[7] : ''}
                 <br>${recipe.hits[0].recipe.ingredientLines[8] ? recipe.hits[0].recipe.ingredientLines[8] : ''}
                 <br>${recipe.hits[0].recipe.ingredientLines[9] ? recipe.hits[0].recipe.ingredientLines[9] : ''}
+                <button type="button" class="recipeSummary" href="${recipe.hits[0].recipe.shareAs}">Full Recipe Here!</button>
                 </p>
-                <p class="recipeSummary">
-                ${recipe.hits[0].recipe.ingredients[0] ? recipe.hits[0].recipe.ingredients[0].text : ''}
-                ${recipe.hits[0].recipe.ingredients[1] ? recipe.hits[0].recipe.ingredients[1].text : ''}
-                ${recipe.hits[0].recipe.ingredients[2] ? recipe.hits[0].recipe.ingredients[2].text : ''}
-                ${recipe.hits[0].recipe.ingredients[3] ? recipe.hits[0].recipe.ingredients[3].text : ''}
-                ${recipe.hits[0].recipe.ingredients[4] ? recipe.hits[0].recipe.ingredients[4].text : ''}
-                ${recipe.hits[0].recipe.ingredients[5] ? recipe.hits[0].recipe.ingredients[5].text : ''}
-                ${recipe.hits[0].recipe.ingredients[6] ? recipe.hits[0].recipe.ingredients[6].text : ''}
-                ${recipe.hits[0].recipe.ingredients[7] ? recipe.hits[0].recipe.ingredients[7].text : ''}
-                ${recipe.hits[0].recipe.ingredients[8] ? recipe.hits[0].recipe.ingredients[8].text : ''}
-                ${recipe.hits[0].recipe.ingredients[9] ? recipe.hits[0].recipe.ingredients[9].text : ''}</p>
                 </div>
                 `
 
