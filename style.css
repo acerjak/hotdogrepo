@@ -106,4 +106,6 @@
     margin: 0 auto;
 }
 .recipeSummary {
+    border-radius: 20%;
+    border: 2px dashed rgb(184, 76, 184);
 }
