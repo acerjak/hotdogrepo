@@ -11,53 +11,61 @@ document.getElementById('submitAPI').addEventListener('click', event => {
 })
 let fetchRecipe = (apiInput) => {
 //fetch whatever recipes with keyword entered by the user on click ensuring submitted in lowercase due to case sensitivity
-    fetch(`https://api.spoonacular.com/recipes/complexSearch?query=${document.getElementById('apiInput').value.toLowerCase()}&maxFat=25&number=10&addRecipeInformation=true&apiKey=0e31448fccc74b5790e7acc7b527f5db`)
+    fetch(`https://api.edamam.com/search?q=${document.getElementById('apiInput').value.toLowerCase()}&app_id=e2ecf8e3&app_key=355f5f8ebcbf253ab525a04461e9309b&from=0&to=9&calories=591-722`)
         //convert data to string
         .then(r => r.json())
             //receive the data now called recipe
             .then(recipe => {
                 //log recipe data into console
-                console.log(recipe.results[0].image)
                 console.log(recipe)
-                createRecipe(recipe)
+                // createRecipe(recipe)
             })
             .catch(error =>
                 console.log(error))
         }
-let createRecipe = (recipe) => {
-    console.log(recipe)
-                //create new element for each recipe generated from search
-                let recipeElem = document.createElement('div')
-                //add attributes to this new element
-                recipeElem.className = 'card'
-                recipeElem.style = 'width: 18rem;'
-                //insert this into new element
-                recipeElem.innerHTML = `
-                <div class="recipeCard">
-                <h3>${recipe.results[0].title}</h3>
-                <h4>${recipe.results[0].analyzedInstructions[0].steps[0].step}
-                ${recipe.results[0].analyzedInstructions[0].steps[1].step}
-                ${recipe.results[0].analyzedInstructions[0].steps[2].step}
-                </h4>
-                <img 
-                    src="${recipe.results[0].image}" 
-                    class="recipeImg"
-                    alt="recipe">
-                <p class="recipeSummary">${recipe.results[0].summary}</p>
-                </div>
-                <div class="recipeCard">
-                <h3>${recipe.results[1].title}</h3>
-                <h4>${recipe.results[1].analyzedInstructions[0].steps[0].step}
-                ${recipe.results[1].analyzedInstructions[0].steps[1].step}
-                ${recipe.results[1].analyzedInstructions[0].steps[2].step}
-                </h4>
-                <img 
-                    src="${recipe.results[1].image}" 
-                    class="recipeImg"
-                    alt="recipe">
-                <p class="recipeSummary">${recipe.results[1].summary}</p>
-                </div>
-                    `
+// let createRecipe = (recipe) => {
+//     console.log(recipe)
+//                 //create new element for each recipe generated from search
+//                 let recipeElem = document.createElement('div')
+//                 //add attributes to this new element
+//                 recipeElem.className = 'card'
+//                 recipeElem.style = 'width: 18rem;'
+//                 //insert this into new element
+//                 recipeElem.innerHTML = `
+//                 <div class="recipeCard">
+//                 <h3>${recipe.results[0].title}</h3>
+//                 <h4>${recipe.results[0].analyzedInstructions[0].steps[0] ? recipe.results[0].analyzedInstructions[0].steps[0].step : ''}
+//                 ${recipe.results[0].analyzedInstructions[0].steps[1] ? recipe.results[0].analyzedInstructions[0].steps[1].step : ''}
+//                 ${recipe.results[0].analyzedInstructions[0].steps[2] ? recipe.results[0].analyzedInstructions[0].steps[2].step : ''}
+//                 ${recipe.results[0].analyzedInstructions[0].steps[3] ? recipe.results[0].analyzedInstructions[0].steps[3].step : ''}
+//                 ${recipe.results[0].analyzedInstructions[0].steps[4] ? recipe.results[0].analyzedInstructions[0].steps[4].step : ''}
+//                 ${recipe.results[0].analyzedInstructions[0].steps[5] ? recipe.results[0].analyzedInstructions[0].steps[5].step : ''}
+//                 </h4>
+//                 <img 
+//                     src="${recipe.results[0].image}" 
+//                     class="recipeImg"
+//                     alt="recipe">
+//                 <p class="recipeSummary">${recipe.results[0].summary}</p>
+//                 </div>
+//                 <div class="recipeCard">
+//                 <h3>${recipe.results[1].title}</h3>
+//                 <h4>${recipe.results[1].analyzedInstructions[0].steps[0] ? recipe.results[0].analyzedInstructions[0].steps[0].step : ''}
+//                 ${recipe.results[1].analyzedInstructions[0].steps[1] ? recipe.results[0].analyzedInstructions[0].steps[1].step : ''}
+//                 ${recipe.results[1].analyzedInstructions[0].steps[2] ? recipe.results[0].analyzedInstructions[0].steps[2].step : ''}
+//                 ${recipe.results[1].analyzedInstructions[0].steps[3] ? recipe.results[0].analyzedInstructions[0].steps[3].step : ''}
+//                 ${recipe.results[1].analyzedInstructions[0].steps[4] ? recipe.results[0].analyzedInstructions[0].steps[4].step : ''}
+//                 ${recipe.results[1].analyzedInstructions[0].steps[5] ? recipe.results[0].analyzedInstructions[0].steps[5].step : ''}
+//                 </h4>
+//                 <img 
+//                     src="${recipe.results[1].image}" 
+//                     class="recipeImg"
+//                     alt="recipe">
+//                 <p class="recipeSummary">${recipe.results[1].summary}</p>
+//                 </div>
+//                     `
+
+
+
                 // <img 
                 //     src="${recipe.results[1].image}" 
                 //     class="card-img-top" 
@@ -95,8 +103,13 @@ let createRecipe = (recipe) => {
                 //     class="card-img-top" 
                 //     alt="${recipe.results[9].title}">
                 // `
+
+
+
+
+
                 //log this new element to ensure correctly dynamically made 
-                console.log(recipeElem) 
-                document.getElementById('recipeDiv').append(recipeElem)
-                document.getElementById('apiInput').value = ''
-}
+//                 console.log(recipeElem) 
+//                 document.getElementById('recipeDiv').append(recipeElem)
+//                 document.getElementById('apiInput').value = ''
+// }
