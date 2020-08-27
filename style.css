@@ -48,7 +48,7 @@
 }
 .apiHotdog {
     border-radius: 25px;
-    background-color: rgb(243, 240, 240);
+    background-color: black;
     box-shadow: 10px 10px 10px grey;
     margin: 0 auto;
     width: 75%;
@@ -57,11 +57,17 @@
     text-align: center;
     margin-bottom: 20px;
 }
+.apiDescription {
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: monospace;
+}
 .apiInput {
+    font-family: monospace;
     display: inline-block;
     text-align: left;
     margin-left: auto;
-    margin-top: 50px;
     margin-right: auto;
     width: 60%;
     height: 25px;
@@ -97,7 +103,7 @@
     box-shadow: 15px 15px 15px grey;
     text-align: center;
     width: 500px;
-    height: 550px;
+    height: 400px;
     display: inline-block;
 }
 .recipeImg {
