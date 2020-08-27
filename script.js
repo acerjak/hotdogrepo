@@ -51,67 +51,95 @@ let createRecipe = (recipe) => {
                 <br>${recipe.hits[0].recipe.ingredientLines[7] ? recipe.hits[0].recipe.ingredientLines[7] : ''}
                 <br>${recipe.hits[0].recipe.ingredientLines[8] ? recipe.hits[0].recipe.ingredientLines[8] : ''}
                 <br>${recipe.hits[0].recipe.ingredientLines[9] ? recipe.hits[0].recipe.ingredientLines[9] : ''}
+                <br>${recipe.hits[0].recipe.ingredientLines[10] ? "see full recipe for more ingredients..." : ''}
                 <button type="button" class="recipeSummary" href="${recipe.hits[0].recipe.shareAs}">Full Recipe Here!</button>
                 </p>
                 </div>
+                <div class="recipeCard">
+                <h3>${recipe.hits[1].recipe.label}</h3>
+                <img 
+                    src="${recipe.hits[1].recipe.image}" 
+                    class="recipeImg"
+                    alt="recipe">
+                <p class="ingredients">
+                ${recipe.hits[1].recipe.ingredientLines[0] ? recipe.hits[1].recipe.ingredientLines[0] : ''}
+                <br>${recipe.hits[1].recipe.ingredientLines[1] ? recipe.hits[1].recipe.ingredientLines[1] : ''}
+                <br>${recipe.hits[1].recipe.ingredientLines[2] ? recipe.hits[1].recipe.ingredientLines[2] : ''}
+                <br>${recipe.hits[1].recipe.ingredientLines[3] ? recipe.hits[1].recipe.ingredientLines[3] : ''}
+                <br>${recipe.hits[1].recipe.ingredientLines[4] ? recipe.hits[1].recipe.ingredientLines[4] : ''}
+                <br>${recipe.hits[1].recipe.ingredientLines[5] ? recipe.hits[1].recipe.ingredientLines[5] : ''}
+                <br>${recipe.hits[1].recipe.ingredientLines[6] ? recipe.hits[1].recipe.ingredientLines[6] : ''}
+                <br>${recipe.hits[1].recipe.ingredientLines[7] ? recipe.hits[1].recipe.ingredientLines[7] : ''}
+                <br>${recipe.hits[1].recipe.ingredientLines[8] ? recipe.hits[1].recipe.ingredientLines[8] : ''}
+                <br>${recipe.hits[1].recipe.ingredientLines[9] ? recipe.hits[1].recipe.ingredientLines[9] : ''}
+                <br>${recipe.hits[1].recipe.ingredientLines[10] ? "see full recipe for more ingredients..." : ''}
+                <button type="button" class="recipeSummary" href="${recipe.hits[1].recipe.shareAs}">Full Recipe Here!</button>
+                </p>
+                </div>
+                <div class="recipeCard">
+                <h3>${recipe.hits[2].recipe.label}</h3>
+                <img 
+                    src="${recipe.hits[2].recipe.image}" 
+                    class="recipeImg"
+                    alt="recipe">
+                <p class="ingredients">
+                ${recipe.hits[2].recipe.ingredientLines[0] ? recipe.hits[2].recipe.ingredientLines[0] : ''}
+                <br>${recipe.hits[2].recipe.ingredientLines[1] ? recipe.hits[2].recipe.ingredientLines[1] : ''}
+                <br>${recipe.hits[2].recipe.ingredientLines[2] ? recipe.hits[2].recipe.ingredientLines[2] : ''}
+                <br>${recipe.hits[2].recipe.ingredientLines[3] ? recipe.hits[2].recipe.ingredientLines[3] : ''}
+                <br>${recipe.hits[2].recipe.ingredientLines[4] ? recipe.hits[2].recipe.ingredientLines[4] : ''}
+                <br>${recipe.hits[2].recipe.ingredientLines[5] ? recipe.hits[2].recipe.ingredientLines[5] : ''}
+                <br>${recipe.hits[2].recipe.ingredientLines[6] ? recipe.hits[2].recipe.ingredientLines[6] : ''}
+                <br>${recipe.hits[2].recipe.ingredientLines[7] ? recipe.hits[2].recipe.ingredientLines[7] : ''}
+                <br>${recipe.hits[2].recipe.ingredientLines[8] ? recipe.hits[2].recipe.ingredientLines[8] : ''}
+                <br>${recipe.hits[2].recipe.ingredientLines[9] ? recipe.hits[2].recipe.ingredientLines[9] : ''}
+                <br>${recipe.hits[2].recipe.ingredientLines[10] ? "see full recipe for more ingredients..." : ''}
+                <button type="button" class="recipeSummary" href="${recipe.hits[2].recipe.shareAs}">Full Recipe Here!</button>
+                </p>
+                </div>
+                <div class="recipeCard">
+                <h3>${recipe.hits[3].recipe.label}</h3>
+                <img 
+                    src="${recipe.hits[3].recipe.image}" 
+                    class="recipeImg"
+                    alt="recipe">
+                <p class="ingredients">
+                ${recipe.hits[3].recipe.ingredientLines[0] ? recipe.hits[3].recipe.ingredientLines[0] : ''}
+                <br>${recipe.hits[3].recipe.ingredientLines[1] ? recipe.hits[3].recipe.ingredientLines[1] : ''}
+                <br>${recipe.hits[3].recipe.ingredientLines[2] ? recipe.hits[3].recipe.ingredientLines[2] : ''}
+                <br>${recipe.hits[3].recipe.ingredientLines[3] ? recipe.hits[3].recipe.ingredientLines[3] : ''}
+                <br>${recipe.hits[3].recipe.ingredientLines[4] ? recipe.hits[3].recipe.ingredientLines[4] : ''}
+                <br>${recipe.hits[3].recipe.ingredientLines[5] ? recipe.hits[3].recipe.ingredientLines[5] : ''}
+                <br>${recipe.hits[3].recipe.ingredientLines[6] ? recipe.hits[3].recipe.ingredientLines[6] : ''}
+                <br>${recipe.hits[3].recipe.ingredientLines[7] ? recipe.hits[3].recipe.ingredientLines[7] : ''}
+                <br>${recipe.hits[3].recipe.ingredientLines[8] ? recipe.hits[3].recipe.ingredientLines[8] : ''}
+                <br>${recipe.hits[3].recipe.ingredientLines[9] ? recipe.hits[3].recipe.ingredientLines[9] : ''}
+                <br>${recipe.hits[3].recipe.ingredientLines[10] ? "see full recipe for more ingredients..." : ''}
+                <button type="button" class="recipeSummary" href="${recipe.hits[3].recipe.shareAs}">Full Recipe Here!</button>
+                </p>
+                </div>
+                <div1 class="recipeCard">
+                <h3>${recipe.hits[4].recipe.label}</h3>
+                <img 
+                    src="${recipe.hits[4].recipe.image}" 
+                    class="recipeImg"
+                    alt="recipe">
+                <p class="ingredients">
+                ${recipe.hits[4].recipe.ingredientLines[0] ? recipe.hits[4].recipe.ingredientLines[0] : ''}
+                <br>${recipe.hits[4].recipe.ingredientLines[1] ? recipe.hits[4].recipe.ingredientLines[1] : ''}
+                <br>${recipe.hits[4].recipe.ingredientLines[2] ? recipe.hits[4].recipe.ingredientLines[2] : ''}
+                <br>${recipe.hits[4].recipe.ingredientLines[3] ? recipe.hits[4].recipe.ingredientLines[3] : ''}
+                <br>${recipe.hits[4].recipe.ingredientLines[4] ? recipe.hits[4].recipe.ingredientLines[4] : ''}
+                <br>${recipe.hits[4].recipe.ingredientLines[5] ? recipe.hits[4].recipe.ingredientLines[5] : ''}
+                <br>${recipe.hits[4].recipe.ingredientLines[6] ? recipe.hits[4].recipe.ingredientLines[6] : ''}
+                <br>${recipe.hits[4].recipe.ingredientLines[7] ? recipe.hits[4].recipe.ingredientLines[7] : ''}
+                <br>${recipe.hits[4].recipe.ingredientLines[8] ? recipe.hits[4].recipe.ingredientLines[8] : ''}
+                <br>${recipe.hits[4].recipe.ingredientLines[9] ? recipe.hits[4].recipe.ingredientLines[9] : ''}
+                <br>${recipe.hits[4].recipe.ingredientLines[10] ? "see full recipe for more ingredients..." : ''}
+                <button type="button" class="recipeSummary" href="${recipe.hits[4].recipe.shareAs}">Full Recipe Here!</button>
+                </p>
+                </div1
                 `
-
-                // <div class="recipeCard">
-                // <h3>${recipe.results[1].title}</h3>
-                // <h4>${recipe.results[1].analyzedInstructions[0].steps[0] ? recipe.results[0].analyzedInstructions[0].steps[0].step : ''}
-                // ${recipe.results[1].analyzedInstructions[0].steps[1] ? recipe.results[0].analyzedInstructions[0].steps[1].step : ''}
-                // ${recipe.results[1].analyzedInstructions[0].steps[2] ? recipe.results[0].analyzedInstructions[0].steps[2].step : ''}
-                // ${recipe.results[1].analyzedInstructions[0].steps[3] ? recipe.results[0].analyzedInstructions[0].steps[3].step : ''}
-                // ${recipe.results[1].analyzedInstructions[0].steps[4] ? recipe.results[0].analyzedInstructions[0].steps[4].step : ''}
-                // ${recipe.results[1].analyzedInstructions[0].steps[5] ? recipe.results[0].analyzedInstructions[0].steps[5].step : ''}
-                // </h4>
-                // <img 
-                //     src="${recipe.results[1].image}" 
-                //     class="recipeImg"
-                //     alt="recipe">
-                // <p class="recipeSummary">${recipe.results[1].summary}</p>
-                // </div>
-
-
-
-                // <img 
-                //     src="${recipe.results[1].image}" 
-                //     class="card-img-top" 
-                //     alt="${recipe.results[1].title}">
-                // <img 
-                //     src="${recipe.results[2].image}" 
-                //     class="card-img-top" 
-                //     alt="${recipe.results[2].title}">
-                // <img 
-                //     src="${recipe.results[3].image}" 
-                //     class="card-img-top" 
-                //     alt="${recipe.results[3].title}">
-                // <img 
-                //     src="${recipe.results[4].image}" 
-                //     class="card-img-top" 
-                //     alt="${recipe.results[4].title}">
-                // <img 
-                //     src="${recipe.results[5].image}" 
-                //     class="card-img-top" 
-                //     alt="${recipe.results[5].title}">
-                // <img 
-                //     src="${recipe.results[6].image}" 
-                //     class="card-img-top" 
-                //     alt="${recipe.results[6].title}">
-                // <img 
-                //     src="${recipe.results[7].image}" 
-                //     class="card-img-top" 
-                //     alt="${recipe.results[7].title}">
-                // <img 
-                //     src="${recipe.results[8].image}" 
-                //     class="card-img-top" 
-                //     alt="${recipe.results[8].title}">
-                // <img 
-                //     src="${recipe.results[9].image}" 
-                //     class="card-img-top" 
-                //     alt="${recipe.results[9].title}">
-                // `
-
                 //log this new element to ensure correctly dynamically made 
                 console.log(recipeElem) 
                 document.getElementById('recipeDiv').append(recipeElem)
