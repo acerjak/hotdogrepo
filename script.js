@@ -18,51 +18,69 @@ let fetchRecipe = (apiInput) => {
             .then(recipe => {
                 //log recipe data into console
                 console.log(recipe)
-                // createRecipe(recipe)
+                //confirm the structure for data
+                console.log(recipe.hits[0].recipe.image)
+                createRecipe(recipe)
             })
             .catch(error =>
                 console.log(error))
         }
-// let createRecipe = (recipe) => {
-//     console.log(recipe)
-//                 //create new element for each recipe generated from search
-//                 let recipeElem = document.createElement('div')
-//                 //add attributes to this new element
-//                 recipeElem.className = 'card'
-//                 recipeElem.style = 'width: 18rem;'
-//                 //insert this into new element
-//                 recipeElem.innerHTML = `
-//                 <div class="recipeCard">
-//                 <h3>${recipe.results[0].title}</h3>
-//                 <h4>${recipe.results[0].analyzedInstructions[0].steps[0] ? recipe.results[0].analyzedInstructions[0].steps[0].step : ''}
-//                 ${recipe.results[0].analyzedInstructions[0].steps[1] ? recipe.results[0].analyzedInstructions[0].steps[1].step : ''}
-//                 ${recipe.results[0].analyzedInstructions[0].steps[2] ? recipe.results[0].analyzedInstructions[0].steps[2].step : ''}
-//                 ${recipe.results[0].analyzedInstructions[0].steps[3] ? recipe.results[0].analyzedInstructions[0].steps[3].step : ''}
-//                 ${recipe.results[0].analyzedInstructions[0].steps[4] ? recipe.results[0].analyzedInstructions[0].steps[4].step : ''}
-//                 ${recipe.results[0].analyzedInstructions[0].steps[5] ? recipe.results[0].analyzedInstructions[0].steps[5].step : ''}
-//                 </h4>
-//                 <img 
-//                     src="${recipe.results[0].image}" 
-//                     class="recipeImg"
-//                     alt="recipe">
-//                 <p class="recipeSummary">${recipe.results[0].summary}</p>
-//                 </div>
-//                 <div class="recipeCard">
-//                 <h3>${recipe.results[1].title}</h3>
-//                 <h4>${recipe.results[1].analyzedInstructions[0].steps[0] ? recipe.results[0].analyzedInstructions[0].steps[0].step : ''}
-//                 ${recipe.results[1].analyzedInstructions[0].steps[1] ? recipe.results[0].analyzedInstructions[0].steps[1].step : ''}
-//                 ${recipe.results[1].analyzedInstructions[0].steps[2] ? recipe.results[0].analyzedInstructions[0].steps[2].step : ''}
-//                 ${recipe.results[1].analyzedInstructions[0].steps[3] ? recipe.results[0].analyzedInstructions[0].steps[3].step : ''}
-//                 ${recipe.results[1].analyzedInstructions[0].steps[4] ? recipe.results[0].analyzedInstructions[0].steps[4].step : ''}
-//                 ${recipe.results[1].analyzedInstructions[0].steps[5] ? recipe.results[0].analyzedInstructions[0].steps[5].step : ''}
-//                 </h4>
-//                 <img 
-//                     src="${recipe.results[1].image}" 
-//                     class="recipeImg"
-//                     alt="recipe">
-//                 <p class="recipeSummary">${recipe.results[1].summary}</p>
-//                 </div>
-//                     `
+let createRecipe = (recipe) => {
+    console.log(recipe)
+                //create new element for each recipe generated from search
+                let recipeElem = document.createElement('div')
+                //add attributes to this new element
+                recipeElem.className = 'card'
+                recipeElem.style = 'width: 18rem;'
+                //insert this into new element
+                recipeElem.innerHTML = `
+                <div class="recipeCard">
+                <h3>${recipe.hits[0].recipe.label}</h3>
+                <img 
+                    src="${recipe.hits[0].recipe.image}" 
+                    class="recipeImg"
+                    alt="recipe">
+                <p class="ingredients">
+                ${recipe.hits[0].recipe.ingredientLines[0] ? recipe.hits[0].recipe.ingredientLines[0] : ''}
+                <br>${recipe.hits[0].recipe.ingredientLines[1] ? recipe.hits[0].recipe.ingredientLines[1] : ''}
+                <br>${recipe.hits[0].recipe.ingredientLines[2] ? recipe.hits[0].recipe.ingredientLines[2] : ''}
+                <br>${recipe.hits[0].recipe.ingredientLines[3] ? recipe.hits[0].recipe.ingredientLines[3] : ''}
+                <br>${recipe.hits[0].recipe.ingredientLines[4] ? recipe.hits[0].recipe.ingredientLines[4] : ''}
+                <br>${recipe.hits[0].recipe.ingredientLines[5] ? recipe.hits[0].recipe.ingredientLines[5] : ''}
+                <br>${recipe.hits[0].recipe.ingredientLines[6] ? recipe.hits[0].recipe.ingredientLines[6] : ''}
+                <br>${recipe.hits[0].recipe.ingredientLines[7] ? recipe.hits[0].recipe.ingredientLines[7] : ''}
+                <br>${recipe.hits[0].recipe.ingredientLines[8] ? recipe.hits[0].recipe.ingredientLines[8] : ''}
+                <br>${recipe.hits[0].recipe.ingredientLines[9] ? recipe.hits[0].recipe.ingredientLines[9] : ''}
+                </p>
+                <p class="recipeSummary">
+                ${recipe.hits[0].recipe.ingredients[0] ? recipe.hits[0].recipe.ingredients[0].text : ''}
+                ${recipe.hits[0].recipe.ingredients[1] ? recipe.hits[0].recipe.ingredients[1].text : ''}
+                ${recipe.hits[0].recipe.ingredients[2] ? recipe.hits[0].recipe.ingredients[2].text : ''}
+                ${recipe.hits[0].recipe.ingredients[3] ? recipe.hits[0].recipe.ingredients[3].text : ''}
+                ${recipe.hits[0].recipe.ingredients[4] ? recipe.hits[0].recipe.ingredients[4].text : ''}
+                ${recipe.hits[0].recipe.ingredients[5] ? recipe.hits[0].recipe.ingredients[5].text : ''}
+                ${recipe.hits[0].recipe.ingredients[6] ? recipe.hits[0].recipe.ingredients[6].text : ''}
+                ${recipe.hits[0].recipe.ingredients[7] ? recipe.hits[0].recipe.ingredients[7].text : ''}
+                ${recipe.hits[0].recipe.ingredients[8] ? recipe.hits[0].recipe.ingredients[8].text : ''}
+                ${recipe.hits[0].recipe.ingredients[9] ? recipe.hits[0].recipe.ingredients[9].text : ''}</p>
+                </div>
+                `
+
+                // <div class="recipeCard">
+                // <h3>${recipe.results[1].title}</h3>
+                // <h4>${recipe.results[1].analyzedInstructions[0].steps[0] ? recipe.results[0].analyzedInstructions[0].steps[0].step : ''}
+                // ${recipe.results[1].analyzedInstructions[0].steps[1] ? recipe.results[0].analyzedInstructions[0].steps[1].step : ''}
+                // ${recipe.results[1].analyzedInstructions[0].steps[2] ? recipe.results[0].analyzedInstructions[0].steps[2].step : ''}
+                // ${recipe.results[1].analyzedInstructions[0].steps[3] ? recipe.results[0].analyzedInstructions[0].steps[3].step : ''}
+                // ${recipe.results[1].analyzedInstructions[0].steps[4] ? recipe.results[0].analyzedInstructions[0].steps[4].step : ''}
+                // ${recipe.results[1].analyzedInstructions[0].steps[5] ? recipe.results[0].analyzedInstructions[0].steps[5].step : ''}
+                // </h4>
+                // <img 
+                //     src="${recipe.results[1].image}" 
+                //     class="recipeImg"
+                //     alt="recipe">
+                // <p class="recipeSummary">${recipe.results[1].summary}</p>
+                // </div>
 
 
 
@@ -104,12 +122,8 @@ let fetchRecipe = (apiInput) => {
                 //     alt="${recipe.results[9].title}">
                 // `
 
-
-
-
-
                 //log this new element to ensure correctly dynamically made 
-//                 console.log(recipeElem) 
-//                 document.getElementById('recipeDiv').append(recipeElem)
-//                 document.getElementById('apiInput').value = ''
-// }
+                console.log(recipeElem) 
+                document.getElementById('recipeDiv').append(recipeElem)
+                document.getElementById('apiInput').value = ''
+}
