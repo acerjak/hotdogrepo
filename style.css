@@ -36,21 +36,33 @@
     clear: both;
 }
 .main {
-    width: 75%;
+    width: 70%;
     float: right;
 }
 .menu {
-    width: 20%;
+    width: 28%;
     border-radius: 25px;
     background-color: rgb(243, 240, 240);
     box-shadow: 10px 10px 10px grey;
     float: left;
 }
+
+@media only screen and (max-width: 414px) {
+    .hotdogTitle {
+        font-size: 35px;
+    }
+    .menu {
+        display: none;
+    }
+    .main {
+        width: 95%;
+    }
+  }
 .apiHotdog {
     border-radius: 25px;
     background-color: black;
     box-shadow: 10px 10px 10px grey;
-    margin: 0 auto;
+    margin: auto;
     width: 75%;
     height: 25%;
     display: block;
@@ -69,7 +81,7 @@
     text-align: left;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    width: 40%;
     height: 25px;
 }
 .recipeBtn {
