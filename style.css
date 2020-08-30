@@ -126,6 +126,7 @@
     margin-top: 19px;
     overflow: auto;
     margin-right: 50%;
+    border-radius: 1%;
     border: 3px solid rgb(160, 159, 159);
     background-image: url("./img/linen.jpg");
     box-shadow: 15px 15px 15px grey;
