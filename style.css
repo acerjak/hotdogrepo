@@ -11,7 +11,7 @@
     background-color: cornflowerblue;
     box-shadow: 10px 10px 10px grey;
     border-radius: 25px;
-    background-image: url("img/hotdog.png"), url("img/grass.jpg");
+    background-image: url("public/assets/img/hotdog.png"), url("public/assets/img/grass.jpg");
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
@@ -108,7 +108,7 @@
     margin: auto;
     overflow: auto;
     border-radius: 25px;
-    background-image: url("./img/plaid.jpg");
+    background-image: url("public/assets/img/plaid.jpg");
     background-color: rgb(243, 240, 240);
     box-shadow: 10px 10px 10px grey;
     width: 75%;
@@ -128,7 +128,7 @@
     margin-right: 50%;
     border-radius: 1%;
     border: 3px solid rgb(160, 159, 159);
-    background-image: url("./img/linen.jpg");
+    background-image: url("public/assets/img/linen.jpg");
     box-shadow: 15px 15px 15px grey;
     text-align: center;
     width: 500px;
