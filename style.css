@@ -55,7 +55,23 @@
         display: none;
     }
     .main {
-        width: 95%;
+        width: 100%;
+    }
+    .recipeDiv {
+        width: auto!important;
+        height: 500px;
+    }
+    .recipeCard {
+        width: 288px!important;
+        margin: 0px!important;
+    }
+    .recipeImg {
+        width: 150px!important;
+        height: 150px!important;
+    }
+    .card {
+        width: 50%;
+        margin: auto;
     }
   }
 .apiHotdog {
