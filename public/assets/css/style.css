@@ -1,0 +1,146 @@
+.hotdog{
+    align-self: center;
+}
+.hotdogPic{
+    width: 500px;
+    height: 500px;
+}
+.hotdogNav{
+    width: 100%;
+    height: 150px;
+    background-color: cornflowerblue;
+    box-shadow: 10px 10px 10px grey;
+    border-radius: 25px;
+    background-image: url("/assets/img/hotdog.png"), url("/assets/img/grass.jpg");
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+.hotdogTitle {
+    margin: 0px;
+    color: white;
+    padding: 46px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 50px;
+    font-family: monospace;
+}
+.column {
+    height: 500px;
+    margin-top: 20px;
+}
+.column:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.main {
+    width: 70%;
+    float: right;
+}
+.menu {
+    width: 28%;
+    border-radius: 25px;
+    background-color: rgb(243, 240, 240);
+    box-shadow: 10px 10px 10px grey;
+    float: left;
+}
+
+@media only screen and (max-width: 414px) {
+    .hotdogTitle {
+        font-size: 35px;
+    }
+    .menu {
+        display: none;
+    }
+    .main {
+        width: 100%;
+    }
+    .recipeDiv {
+        width: auto!important;
+        height: 500px;
+    }
+    .recipeCard {
+        width: 288px!important;
+        margin: 0px!important;
+    }
+    .recipeImg {
+        width: 150px!important;
+        height: 150px!important;
+    }
+    .card {
+        width: 50%;
+        margin: auto;
+    }
+  }
+.apiHotdog {
+    border-radius: 25px;
+    background-color: black;
+    box-shadow: 10px 10px 10px grey;
+    margin: auto;
+    width: 75%;
+    height: 25%;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.apiDescription {
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: monospace;
+}
+.apiInput {
+    font-family: monospace;
+    display: inline-block;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+    height: 25px;
+}
+.recipeBtn {
+    width: 10%;
+    height: 20px;
+}
+.recipeDiv {
+    margin: auto;
+    overflow: auto;
+    border-radius: 25px;
+    background-image: url("/assets/img/plaid.jpg");
+    background-color: rgb(243, 240, 240);
+    box-shadow: 10px 10px 10px grey;
+    width: 75%;
+    height: 70%;
+}
+* {
+    box-sizing: border-box;
+}
+.card{
+    width: 70%;
+    display: block;
+}
+.recipeCard {
+    margin-left: 50%;
+    margin-top: 19px;
+    overflow: auto;
+    margin-right: 50%;
+    border-radius: 1%;
+    border: 3px solid rgb(160, 159, 159);
+    background-image: url("/assets/img/linen.jpg");
+    box-shadow: 15px 15px 15px grey;
+    text-align: center;
+    width: 500px;
+    height: 400px;
+    display: inline-block;
+}
+.recipeImg {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+.recipeSummary {
+    border-radius: 20%;
+    border: 2px dashed rgb(184, 76, 184);
+}
