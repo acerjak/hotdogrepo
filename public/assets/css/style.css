@@ -47,7 +47,7 @@
     float: left;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 768px) {
     .hotdogTitle {
         font-size: 35px;
     }
