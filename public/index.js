@@ -52,7 +52,8 @@ let createRecipe = (recipe) => {
                 <br>${recipe.hits[0].recipe.ingredientLines[8] ? recipe.hits[0].recipe.ingredientLines[8] : ''}
                 <br>${recipe.hits[0].recipe.ingredientLines[9] ? recipe.hits[0].recipe.ingredientLines[9] : ''}
                 <br>${recipe.hits[0].recipe.ingredientLines[10] ? "see full recipe for more ingredients..." : ''}
-                <button type="button" class="recipeSummary" href="${recipe.hits[0].recipe.shareAs}">Full Recipe Here!</button>
+                <hr>
+                <a type="button" class="recipeSummary" href="${recipe.hits[0].recipe.shareAs}">Full Recipe Here!</a>
                 </p>
                 </div>
                 <div class="recipeCard">
@@ -73,7 +74,8 @@ let createRecipe = (recipe) => {
                 <br>${recipe.hits[1].recipe.ingredientLines[8] ? recipe.hits[1].recipe.ingredientLines[8] : ''}
                 <br>${recipe.hits[1].recipe.ingredientLines[9] ? recipe.hits[1].recipe.ingredientLines[9] : ''}
                 <br>${recipe.hits[1].recipe.ingredientLines[10] ? "see full recipe for more ingredients..." : ''}
-                <button type="button" class="recipeSummary" href="${recipe.hits[1].recipe.shareAs}">Full Recipe Here!</button>
+                <hr>
+                <a type="button" class="recipeSummary" href="${recipe.hits[1].recipe.shareAs}">Full Recipe Here!</a>
                 </p>
                 </div>
                 <div class="recipeCard">
@@ -94,7 +96,8 @@ let createRecipe = (recipe) => {
                 <br>${recipe.hits[2].recipe.ingredientLines[8] ? recipe.hits[2].recipe.ingredientLines[8] : ''}
                 <br>${recipe.hits[2].recipe.ingredientLines[9] ? recipe.hits[2].recipe.ingredientLines[9] : ''}
                 <br>${recipe.hits[2].recipe.ingredientLines[10] ? "see full recipe for more ingredients..." : ''}
-                <button type="button" class="recipeSummary" href="${recipe.hits[2].recipe.shareAs}">Full Recipe Here!</button>
+                <hr>
+                <a type="button" class="recipeSummary" href="${recipe.hits[2].recipe.shareAs}">Full Recipe Here!</a>
                 </p>
                 </div>
                 <div class="recipeCard">
@@ -115,7 +118,7 @@ let createRecipe = (recipe) => {
                 <br>${recipe.hits[3].recipe.ingredientLines[8] ? recipe.hits[3].recipe.ingredientLines[8] : ''}
                 <br>${recipe.hits[3].recipe.ingredientLines[9] ? recipe.hits[3].recipe.ingredientLines[9] : ''}
                 <br>${recipe.hits[3].recipe.ingredientLines[10] ? "see full recipe for more ingredients..." : ''}
-                <button type="button" class="recipeSummary" href="${recipe.hits[3].recipe.shareAs}">Full Recipe Here!</button>
+                <a type="button" class="recipeSummary" href="${recipe.hits[3].recipe.shareAs}">Full Recipe Here!</a>
                 </p>
                 </div>
                 <div1 class="recipeCard">
@@ -136,7 +139,8 @@ let createRecipe = (recipe) => {
                 <br>${recipe.hits[4].recipe.ingredientLines[8] ? recipe.hits[4].recipe.ingredientLines[8] : ''}
                 <br>${recipe.hits[4].recipe.ingredientLines[9] ? recipe.hits[4].recipe.ingredientLines[9] : ''}
                 <br>${recipe.hits[4].recipe.ingredientLines[10] ? "see full recipe for more ingredients..." : ''}
-                <button type="button" class="recipeSummary" href="${recipe.hits[4].recipe.shareAs}">Full Recipe Here!</button>
+                <hr>
+                <a type="button" class="recipeSummary" href="${recipe.hits[4].recipe.shareAs}">Full Recipe Here!</a>
                 </p>
                 </div1
                 `
